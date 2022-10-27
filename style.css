@@ -117,6 +117,7 @@ h2{
     text-align:center;
     text-transform: uppercase;
     padding:15px;
+    color:white;
 }
 
 .sec{
@@ -229,6 +230,91 @@ table{
 }
 
 .navbar{
-    background-color: rgb(138, 56, 122);
+    background-color: rgb(138, 56, 122)!important;
+    text-shadow: 0 0 1.5px white;
 }
+
+.jumbotron{
+    background-color: rgb(255, 196, 246);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height:275px;
+    margin:0;
+
+}
+
+.jumbotron2{
+    background-color: rgb(235, 196, 235);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    
+}
+
+.jumbotron3{
+    background-color: rgb(235, 196, 235);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    
+}
+
+
+#bt{
+    background-color: rgb(39, 3, 40);
+    color:white;
+    text-shadow: 0 0 5px white;
+    border:0;
+    border: 2px solid black !important;
+
+}
+
+.nleft{
+    padding: 20px;
+}
+
+.nleft h4{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.nleft h4::after{
+    content:"🙉";
+}
+
+.nleft p{
+    text-align: justify;
+    padding:15px;
+}
+
+
+.nright{
+    height: 450px;
+    background-image: url(img/oso.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nright2{
+    height: 450px;
+    background-image: url(img/conejo.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.container1{
+    background-color: rgb(207, 172, 207);
+}
+.container-fluid{
+    background-color: rgb(207, 172, 207);
+}
+
+.table{
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+
+
 
