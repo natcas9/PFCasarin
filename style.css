@@ -168,7 +168,7 @@ footer{
 }
 
 form{
-    color:white;
+    color:black;
 }
 
 
@@ -310,6 +310,10 @@ table{
 
 .table{
     background-color: rgb(255, 255, 255);
+}
+
+.form-horizontal{
+    background-color: rgb(207, 176, 205);
 }
 
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Contacto</title>
@@ -12,53 +13,79 @@
 
 
 <body>
-    <header>
-        <div class="logo">Pagina <span>web</span></div>
-        <nav class="barra">
-            <ul>
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="nosotros.html">Nosotros</a></li>
-                <li><a href="catalogo.html">Catálogo 1</a></li>
-                <li><a href="catalogo2.html">Catálogo 2</a>
-                <li><a href="eventos.html">Eventos</a></li>
+ <!--Navbar inicia-->
+ <nav class="navbar navbar-expand-md navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="../index.html">Tobadi Diseño🎨</a>
+  
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Navbar links -->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="nosotros.html">Nosotros</a>
+          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo.html">Catálogo 1</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="catalogo2.html">Catálogo 2</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="eventos.html">Eventos</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<!--Navbar termina-->
 
-            </ul>
-        
-        </nav>
-    </header>
-    <main>
+    <h2>Contacto</h2>
 
-    
-    <h1>Contacto</h1>
-    <!-- Formulario -->
-    <form action="enviar.php" method="post" enctype="text/plain" netlify>
-    <label for="names">Nombre:</label>
-    <input id="names" name="names" type="text" required>
-    <br>
-    <br>
-    <label for="apellidos">Apellidos:</label>
-    <input id="apellidos" name="apellidos" type="text" required>
-    <br>
-    <br>
-    <label for="telefono">Telefono:</label>
-    <input id="telefono" name="telefono" type="tel" required>
-    <br>
-    <br>
-    <label for="correo">Correo:
-    </label>
-    <input id="correo" name= "correo" type="email">
-    <br>
-    <br>
-    <label for="newsletter"> Deseas recibir el newsletter? </label>
-    <input id="newsletter" name="newsletter" type="checkbox">
-    <br>
-    <br>
-    <label for="">Comentarios</label>
+    <form class="form-horizontal" action="/action_page.php">
+        <div class="form-group">
+          <label class="control-label col-sm-2" for="email">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="control-label col-sm-2" >Nombre:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="pwd" placeholder="Ingresa nombres">
+          </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" >Apellidos:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="pwd" placeholder="Ingresa apellidos">
+            </div>
+          </div>
+        <div class="form-group">
+            <label class="control-label col-sm-2" for="pwd">Telefono:</label>
+            <div class="col-sm-10">
+              <input type="telefono" class="form-control" id="pwd" type= "tel" placeholder="Ingresa teléfono">
+            </div>
+          </div>
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <div class="checkbox">
+              <label><input type="checkbox"> Remember me</label>
+            </div>
+          </div>
+        </div>
+        <label for="">Comentarios</label>
     <br>
     <textarea name="" id="" cols="30" rows="5" placeholder="Escribe tus comentarios"></textarea>
-    <input type="submit">
-    <input type="reset">
-    </main>
+        <input type="submit">
+        <input type="reset">
+          </div>
+        </div>
+    </form>
+
     <h2>Ubicacion</h2>
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3764.32245431082!2d-99.16465228610404!3d19.355185648169293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ffc400ba3f3b%3A0x6201a4f7f7ccf4a1!2sFrida%20Kahlo%20Museum!5e0!3m2!1sen!2smx!4v1665105415620!5m2!1sen!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     
@@ -79,5 +106,8 @@
     
 
 </form>  
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 </body>
 </html>
