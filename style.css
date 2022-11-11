@@ -10,14 +10,14 @@ html{
 }
 
 body{
-    background-color:grey;
+    background-color:rgb(167, 139, 167);
 }
 
 
 header{
     height:80px;
     width:100%;
-    background-color: purple;
+    background-color: rgb(254, 254, 254);
     font-size:15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color:white;
@@ -46,7 +46,7 @@ header{
 
 .barra a{
     text-decoration: none;
-    color:white;
+    color:rgb(255, 255, 255);
 }
 
 .barra a:hover{
@@ -76,7 +76,7 @@ main{
 }
 
 h1{
-    color:purple;
+    color:rgb(255, 255, 255);
     text-shadow: 0 0 5px white;
     margin-bottom: 10px;
 }
@@ -203,8 +203,6 @@ table{
 
 }
 
-
-
 @keyframes circulo{
     0%{
         border-radius: 0;
@@ -222,7 +220,7 @@ table{
     100%{
         border: radius 75px;
         transform:translate(300px);
-  
+
 
     }
 
@@ -287,7 +285,7 @@ table{
 
 .nright{
     height: 450px;
-    background-image: url(img/oso.jpg);
+    background-image: url(img/lightwood.jpg);
     background-size: cover;
     background-position: center;
 
@@ -295,7 +293,7 @@ table{
 
 .nright2{
     height: 450px;
-    background-image: url(img/conejo.jpg);
+    background-image: url(img/pincel-color.jpg);
     background-size: cover;
     background-position: center;
 
@@ -315,6 +313,11 @@ table{
 .form-horizontal{
     background-color: rgb(207, 176, 205);
 }
+
+.classevent{
+    height:1200px;
+}
+
 
 
 
