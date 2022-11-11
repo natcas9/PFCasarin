@@ -1,327 +1,299 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
-    background-color:rgb(167, 139, 167);
+body {
+  background-color: rgb(167, 139, 167);
 }
 
-
-header{
-    height:80px;
-    width:100%;
-    background-color: rgb(254, 254, 254);
-    font-size:15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    padding:20px;
-    text-transform: capitalize;
-
-}
-.logo{
-    float:left;
-}
-.logo span{
-    color:grey;
+header {
+  height: 80px;
+  width: 100%;
+  background-color: rgb(254, 254, 254);
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  padding: 20px;
+  text-transform: capitalize;
 }
 
-.barra{
-    float:right;
+.logo {
+  float: left;
 }
 
-.barra ul{
-    list-style: none;
+.logo span {
+  color: grey;
 }
 
-.barra ul li{
-    display:inline-block;
+.barra {
+  float: right;
 }
 
-.barra a{
-    text-decoration: none;
-    color:rgb(255, 255, 255);
+.barra ul {
+  list-style: none;
 }
 
-.barra a:hover{
-    color:#222;
-    text-decoration: underline;
+.barra ul li {
+  display: inline-block;
 }
 
-main{
-    height:calc(100vh - 80px);
-    width:100;
-    background-image: url(img/back.jpg) ;
-    background-size: cover;
-    background-position: left;
+.barra a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
 }
 
-.call{
-    color:white;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 0.5px;
-    float:right;
-    background-color: grey;
-    padding:20px;
-    border:2px solid black;
-    margin: 20px;
-    width:60%
-
+.barra a:hover {
+  color: #222;
+  text-decoration: underline;
 }
 
-h1{
-    color:rgb(255, 255, 255);
-    text-shadow: 0 0 5px white;
-    margin-bottom: 10px;
+main {
+  height: calc(100vh - 80px);
+  width: 100;
+  background-image: url(img/back.jpg);
+  background-size: cover;
+  background-position: left;
 }
 
-.call p{
-    font-size:20px;
-    margin-bottom: 20px;;
+.call {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.5px;
+  float: right;
+  background-color: grey;
+  padding: 20px;
+  border: 2px solid black;
+  margin: 20px;
+  width: 60%;
 }
 
+h1 {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px white;
+  margin-bottom: 10px;
+}
+
+.call p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
 
 .call a {
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.call a:hover {
+  color: black;
+  border: 2px solid black;
+}
+
+.promo {
+  text-align: center;
+  background-color: grey;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: purple;
+  font-size: 30px;
+  font-family: "Roboto", sans-serif;
+  border: 4px solid white;
+}
+
+h2 {
+  background-color: purple;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+  color: white;
+}
+
+.sec {
+  height: 700px;
+  width: 100%;
+  background-color: grey;
+}
+
+footer {
+  background-color: plum;
+  text-align: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 20px;
+}
+
+.redes {
+  font-size: 40px;
+  letter-spacing: 10px;
+}
+
+.redes a {
+  color: white;
+}
+
+.redes a:hover {
+  color: black;
+  text-shadow: 0 0 2px black;
+}
+
+.subir {
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  border: 3px solid purple;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  color: purple;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px 2px purple;
+}
+
+form {
+  color: black;
+}
+
+#callmain {
+  float: center;
+  background-color: black;
+}
+
+.h2modif {
+  color: purple;
+  background-color: grey;
+}
+
+table {
+  background-color: lavender;
+  width: 100%;
+}
+
+#cuadrado {
+  height: 150px;
+  width: 150px;
+  background-color: rgb(205, 117, 203);
+  text-align: center;
+  line-height: 150px;
+  font-size: 30px;
+  color: white;
+  animation-name: circulo;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circulo {
+  0% {
+    border-radius: 0;
+    opacity: 0;
+  }
+  50% {
+    border-radius: 30px;
+    transform: translateX(300px);
     background-color: purple;
-    color:white;
-    text-decoration: none;
-    padding:10px 20px;
-    border-radius:7px;
+    opacity: 1;
+  }
+  100% {
+    border: radius 75px;
+    transform: translate(300px);
+  }
+}
+.navbar {
+  background-color: rgb(138, 56, 122) !important;
+  text-shadow: 0 0 1.5px white;
 }
 
-.call a:hover{
-    color:black;
-    border:2px solid black;
+.jumbotron {
+  background-color: rgb(255, 196, 246);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 275px;
+  margin: 0;
 }
 
-.promo{
-    text-align: center;
-    background-color: grey;
-    padding-top:60px;
-    padding-bottom: 60px;
-    color:purple;
-    font-size:30px;
-    font-family:'Roboto', sans-serif;
-    border:4px solid white;
+.jumbotron2 {
+  background-color: rgb(235, 196, 235);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
 }
 
-h2{
-    background-color: purple;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align:center;
-    text-transform: uppercase;
-    padding:15px;
-    color:white;
+.jumbotron3 {
+  background-color: rgb(235, 196, 235);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
 }
 
-.sec{
-    height:700px;
-    width:100%;
-    background-color: grey;
+#bt {
+  background-color: rgb(39, 3, 40);
+  color: white;
+  text-shadow: 0 0 5px white;
+  border: 0;
+  border: 2px solid black !important;
 }
 
-footer{
-    background-color: plum;
-    text-align:center;
-    font-size:25px;
-    text-transform:uppercase;
-    font-family:Verdana, Geneva, Tahoma, sans-serif; 
-    padding:20px;
+.nleft {
+  padding: 20px;
 }
 
-
-
-.redes{
-    font-size: 40px;
-    letter-spacing:10px;
+.nleft h4 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
-.redes a{
-    color: white;
+.nleft h4::after {
+  content: "🙉";
 }
 
-.redes a:hover{
-    color:black;
-    text-shadow: 0 0 2px black;
+.nleft p {
+  text-align: justify;
+  padding: 15px;
 }
 
-.subir{
-    height:45px;
-    width:45px;
-    background-color: white;
-    border:3px solid purple;
-    position:fixed;
-    right:20px;
-    bottom:20px;
-    color:purple; 
-    text-align: center;
-    font-size:30px;
-    line-height:45px;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px 2px purple;
+.nright {
+  height: 450px;
+  background-image: url(img/lightwood.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-form{
-    color:black;
+.nright2 {
+  height: 450px;
+  background-image: url(img/pincel-color.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
-
-#callmain{
-    float:center;
-    background-color: black;
+.container1 {
+  background-color: rgb(207, 172, 207);
 }
 
-.h2modif{
-    color:purple;
-    background-color: grey;
+.container-fluid {
+  background-color: rgb(207, 172, 207);
 }
 
-table{
-    background-color:lavender;
-    width:100%;
-
+.table {
+  background-color: rgb(255, 255, 255);
 }
 
-#cuadrado{
-    height:150px;
-    width:150px;
-    background-color: rgb(205, 117, 203);
-    text-align: center;
-    line-height: 150px;
-    font-size:30px;
-    color:white;
-    animation-name: circulo;
-    animation-duration:5s;
-    animation-iteration-count:infinite ;
-    
-
+.form-horizontal {
+  background-color: rgb(207, 176, 205);
 }
 
-@keyframes circulo{
-    0%{
-        border-radius: 0;
-        opacity:0;
-    }
-
-    50%{
-        border-radius:30px;
-        transform:translateX(300px);
-        background-color: purple;
-        opacity:1;
-
-    }
-
-    100%{
-        border: radius 75px;
-        transform:translate(300px);
-
-
-    }
-
-
+.classevent {
+  height: 1205px;
 }
 
-.navbar{
-    background-color: rgb(138, 56, 122)!important;
-    text-shadow: 0 0 1.5px white;
-}
-
-.jumbotron{
-    background-color: rgb(255, 196, 246);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    height:275px;
-    margin:0;
-
-}
-
-.jumbotron2{
-    background-color: rgb(235, 196, 235);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:0;
-    
-}
-
-.jumbotron3{
-    background-color: rgb(235, 196, 235);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin:0;
-    
-}
-
-
-#bt{
-    background-color: rgb(39, 3, 40);
-    color:white;
-    text-shadow: 0 0 5px white;
-    border:0;
-    border: 2px solid black !important;
-
-}
-
-.nleft{
-    padding: 20px;
-}
-
-.nleft h4{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-}
-
-.nleft h4::after{
-    content:"🙉";
-}
-
-.nleft p{
-    text-align: justify;
-    padding:15px;
-}
-
-
-.nright{
-    height: 450px;
-    background-image: url(img/lightwood.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.nright2{
-    height: 450px;
-    background-image: url(img/pincel-color.jpg);
-    background-size: cover;
-    background-position: center;
-
-}
-
-.container1{
-    background-color: rgb(207, 172, 207);
-}
-.container-fluid{
-    background-color: rgb(207, 172, 207);
-}
-
-.table{
-    background-color: rgb(255, 255, 255);
-}
-
-.form-horizontal{
-    background-color: rgb(207, 176, 205);
-}
-
-.classevent{
-    height:1200px;
-}
-
-
-
-
-
-
-
-
+/*# sourceMappingURL=style.css.map */
